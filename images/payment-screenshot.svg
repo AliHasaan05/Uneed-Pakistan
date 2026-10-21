@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 880" width="100%" height="100%" style="max-width: 460px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Drop Shadow for Phone -->
+    <filter id="phoneShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#071e3d" flood-opacity="0.22" />
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#071e3d" flood-opacity="0.12" />
+    </filter>
+    
+    <!-- Receipt Card Shadow -->
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0c2b54" flood-opacity="0.08" />
+    </filter>
+
+    <linearGradient id="phoneBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d3748" />
+      <stop offset="50%" stop-color="#1a202c" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+
+    <linearGradient id="screenBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#eff6ff" />
+      <stop offset="35%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <linearGradient id="successGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#16a34a" />
+    </linearGradient>
+
+    <linearGradient id="waGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#25D366" />
+      <stop offset="100%" stop-color="#128C7E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Phone Shadow & Bezel -->
+  <rect x="20" y="20" width="420" height="840" rx="46" ry="46" fill="url(#phoneBody)" filter="url(#phoneShadow)" stroke="#4a5568" stroke-width="2" />
+  
+  <!-- Inner Screen Border -->
+  <rect x="32" y="32" width="396" height="816" rx="38" ry="38" fill="url(#screenBg)" />
+
+  <!-- Phone Notch / Island -->
+  <rect x="165" y="44" width="130" height="24" rx="12" ry="12" fill="#0f172a" />
+  <circle cx="270" cy="56" r="4.5" fill="#1e293b" />
+  <circle cx="210" cy="56" r="3.5" fill="#0284c7" opacity="0.6" />
+
+  <!-- Status Bar (Time, Icons) -->
+  <text x="65" y="60" font-size="13" font-weight="700" fill="#0f172a">14:15</text>
+  <!-- Wi-Fi & Battery Icons -->
+  <g transform="translate(345, 48)" fill="#0f172a">
+    <!-- Signal Bars -->
+    <rect x="0" y="8" width="3" height="4" rx="0.5" />
+    <rect x="5" y="6" width="3" height="6" rx="0.5" />
+    <rect x="10" y="4" width="3" height="8" rx="0.5" />
+    <rect x="15" y="2" width="3" height="10" rx="0.5" />
+    <!-- Battery -->
+    <rect x="25" y="2" width="20" height="10" rx="2.5" fill="none" stroke="#0f172a" stroke-width="1.2" />
+    <rect x="27" y="4" width="14" height="6" rx="1.5" fill="#16a34a" />
+    <rect x="46" y="5" width="1.5" height="4" rx="0.5" />
+  </g>
+
+  <!-- Top App Bar -->
+  <g transform="translate(52, 92)">
+    <!-- Bank Crest / Logo Circle -->
+    <circle cx="20" cy="18" r="18" fill="#0c2b54" />
+    <text x="20" y="23" font-size="12" font-weight="bold" fill="#fbb034" text-anchor="middle">UPF</text>
+    <text x="48" y="16" font-size="14" font-weight="bold" fill="#071e3d">Meezan / Raast</text>
+    <text x="48" y="29" font-size="11" fill="#64748b">Digital Funds Transfer</text>
+    
+    <!-- Receipt Badge -->
+    <rect x="260" y="6" width="60" height="22" rx="11" fill="#e0f2fe" />
+    <text x="290" y="21" font-size="10" font-weight="bold" fill="#0284c7" text-anchor="middle">OFFICIAL</text>
+  </g>
+
+  <!-- Success Tick Circle -->
+  <g transform="translate(230, 195)">
+    <!-- Soft glow circle -->
+    <circle cx="0" cy="0" r="44" fill="#dcfce7" />
+    <circle cx="0" cy="0" r="34" fill="url(#successGrad)" />
+    <!-- Checkmark Path -->
+    <path d="M-12 -2 L-3 7 L14 -10" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Status & Amount -->
+  <text x="230" y="260" font-size="17" font-weight="600" fill="#16a34a" text-anchor="middle">Transfer Successful</text>
+  <text x="230" y="302" font-size="34" font-weight="800" fill="#071e3d" text-anchor="middle">PKR 5,000.00</text>
+  <text x="230" y="322" font-size="12" fill="#64748b" text-anchor="middle">Sent via Raast Instant Pay • No Transaction Fee</text>
+
+  <!-- Receipt Details Card -->
+  <g transform="translate(48, 342)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="364" height="340" rx="18" ry="18" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" />
+
+    <!-- Card Header / Title -->
+    <text x="20" y="30" font-size="12" font-weight="bold" fill="#94a3b8" letter-spacing="0.5">TRANSACTION DETAILS</text>
+    <line x1="20" y1="42" x2="344" y2="42" stroke="#f1f5f9" stroke-width="1.5" />
+
+    <!-- Row 1: Recipient -->
+    <text x="20" y="68" font-size="12" fill="#64748b">Beneficiary Title:</text>
+    <text x="344" y="68" font-size="13" font-weight="bold" fill="#071e3d" text-anchor="end">Umeed Pakistan Foundation</text>
+
+    <!-- Row 2: Bank Name -->
+    <text x="20" y="104" font-size="12" fill="#64748b">Receiving Bank:</text>
+    <text x="344" y="104" font-size="13" font-weight="600" fill="#0f172a" text-anchor="end">Meezan Bank Limited</text>
+
+    <!-- Row 3: Account / IBAN -->
+    <text x="20" y="140" font-size="12" fill="#64748b">Account / IBAN:</text>
+    <text x="344" y="140" font-size="12" font-weight="600" fill="#1e293b" text-anchor="end">PK89 MEZN 0002 3401 0567 8901</text>
+
+    <!-- Row 4: Raast ID -->
+    <text x="20" y="176" font-size="12" fill="#64748b">Raast ID / Mobile:</text>
+    <text x="344" y="176" font-size="13" font-weight="bold" fill="#0284c7" text-anchor="end">0300 0000000</text>
+
+    <!-- Row 5: Transaction ID -->
+    <text x="20" y="212" font-size="12" fill="#64748b">Transaction ID:</text>
+    <text x="344" y="212" font-size="12" font-weight="700" fill="#0f172a" text-anchor="end">TXN-8492019482</text>
+
+    <!-- Row 6: Date & Time -->
+    <text x="20" y="248" font-size="12" fill="#64748b">Date &amp; Time:</text>
+    <text x="344" y="248" font-size="12" font-weight="500" fill="#334155" text-anchor="end">23 Sep 2026, 02:45 PM</text>
+
+    <!-- Row 7: Purpose / Category -->
+    <text x="20" y="284" font-size="12" fill="#64748b">Purpose:</text>
+    <text x="344" y="284" font-size="12" font-weight="600" fill="#b45309" text-anchor="end">Donation / Zakat &amp; Sadaqah</text>
+
+    <!-- Row 8: Status Badge -->
+    <line x1="20" y1="298" x2="344" y2="298" stroke="#f1f5f9" stroke-width="1.5" />
+    <text x="20" y="322" font-size="12" fill="#64748b">Payment Status:</text>
+    <rect x="260" y="307" width="84" height="22" rx="11" fill="#dcfce7" />
+    <text x="302" y="322" font-size="11" font-weight="bold" fill="#15803d" text-anchor="middle">✓ Completed</text>
+  </g>
+
+  <!-- Action CTA Button at Bottom -->
+  <g transform="translate(48, 700)">
+    <!-- WhatsApp Share Button -->
+    <rect x="0" y="0" width="364" height="46" rx="12" ry="12" fill="url(#waGrad)" />
+    <!-- WhatsApp Logo Path -->
+    <path d="M108 23 C108 17.5 112.5 13 118 13 C123.5 13 128 17.5 128 23 C128 24.8 127.5 26.5 126.6 28 L127.4 32.5 L122.9 31.7 C121.4 32.5 119.7 33 118 33 C112.5 33 108 28.5 108 23 Z" fill="#ffffff" />
+    <text x="195" y="29" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Share Screenshot via WhatsApp</text>
+  </g>
+
+  <!-- Secondary Download/Save link -->
+  <text x="230" y="770" font-size="13" font-weight="600" fill="#0284c7" text-anchor="middle">📥 Save Receipt Image to Gallery</text>
+
+  <!-- Bottom Home Bar -->
+  <rect x="160" y="832" width="140" height="4.5" rx="2.25" ry="2.25" fill="#94a3b8" />
+</svg>

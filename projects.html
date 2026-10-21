@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects &amp; Causes | Umeed Pakistan Foundation</title>
+  <meta name="description" content="Support education, healthcare, food assistance, clean water, flood relief, and orphans across Pakistan. Transparent projects with live tracking." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ HEADER / NAVBAR ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Umeed Pakistan Foundation Home">
+        <span class="brand-mark" aria-hidden="true">U</span>
+        <span class="brand-text">
+          <strong>Umeed Pakistan</strong>
+          <em>Foundation</em>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          
+          <!-- Dropdown: Who We Are -->
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+              <span>Who we are</span>
+              <svg class="nav-chevron" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <div class="nav-dropdown">
+              <a class="dropdown-link" href="who-we-are.html#about-us">About us</a>
+              <a class="dropdown-link" href="who-we-are.html#vision">Vision</a>
+              <a class="dropdown-link" href="who-we-are.html#objectives">Objectives</a>
+            </div>
+          </li>
+
+          <!-- Dropdown: Projects (Active) -->
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle active" type="button" aria-expanded="false" aria-haspopup="true">
+              <span> <a class="nav-link" href="projects.html">Projects</a></span>
+              <svg class="nav-chevron" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <div class="nav-dropdown">
+              <a class="dropdown-link" href="projects.html#education">Education</a>
+              <a class="dropdown-link" href="projects.html#healthcare">Healthcare</a>
+              <a class="dropdown-link" href="projects.html#food-nutrition">Food and nutrition</a>
+              <a class="dropdown-link" href="projects.html#emergency-relief">Emergency Relief</a>
+              <a class="dropdown-link" href="projects.html#orphans-children">Orphans &amp; Vulnerable Children</a>
+            </div>
+          </li>
+
+          <!-- Dropdown: Networks (15 Cities Mega Menu) -->
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+              <span>Networks</span>
+              <svg class="nav-chevron" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <div class="nav-dropdown nav-dropdown-mega">
+              <div class="mega-header">
+                <h4>Nationwide Volunteer &amp; Relief Networks</h4>
+                <a href="networks.html">View All 15 Hubs →</a>
+              </div>
+              <div class="mega-columns">
+                <div class="mega-col">
+                  <p class="mega-col-title">Punjab</p>
+                  <a class="dropdown-link" href="networks.html#lahore">Lahore</a>
+                  <a class="dropdown-link" href="networks.html#rawalpindi">Rawalpindi</a>
+                  <a class="dropdown-link" href="networks.html#faisalabad">Faisalabad</a>
+                  <a class="dropdown-link" href="networks.html#multan">Multan</a>
+                  <a class="dropdown-link" href="networks.html#gujranwala">Gujranwala</a>
+                  <a class="dropdown-link" href="networks.html#sialkot">Sialkot</a>
+                  <a class="dropdown-link" href="networks.html#bahawalpur">Bahawalpur</a>
+                </div>
+                <div class="mega-col">
+                  <p class="mega-col-title">Sindh &amp; Balochistan</p>
+                  <a class="dropdown-link" href="networks.html#karachi">Karachi</a>
+                  <a class="dropdown-link" href="networks.html#hyderabad">Hyderabad</a>
+                  <a class="dropdown-link" href="networks.html#quetta">Quetta</a>
+                </div>
+                <div class="mega-col">
+                  <p class="mega-col-title">Federal, KPK &amp; North</p>
+                  <a class="dropdown-link" href="networks.html#islamabad">Islamabad</a>
+                  <a class="dropdown-link" href="networks.html#peshawar">Peshawar</a>
+                  <a class="dropdown-link" href="networks.html#abbottabad">Abbottabad</a>
+                  <a class="dropdown-link" href="networks.html#murree">Murree</a>
+                  <a class="dropdown-link" href="networks.html#gilgit-baltistan">Gilgit Baltistan</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+   
+          <li class="nav-item"><a class="nav-link" href="how-to-help.html">How to help</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+          <!-- Mobile Drawer Action -->
+          <li class="nav-cta-mobile">
+            <a class="btn btn-yellow btn-block" href="donate.html">Donate Now</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-yellow btn-donate" href="donate.html">Donate Now</a>
+        <button class="hamburger" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <img class="page-hero-bg" src="images/causes/education.jpg" alt="Pakistani school children writing in notebooks inside a village classroom" />
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content">
+        <div class="breadcrumbs">
+          
+          <span>Projects</span>
+        </div>
+        <span class="section-eyebrow eyebrow-light">Our Work Across Pakistan</span>
+        <h1>Projects &amp; <span class="highlight">Causes We Support</span></h1>
+        <p class="lead">Sample projects showing how funds are grouped, tracked and reported by region. Choose the work closest to your heart. Every contribution is directed to a specific need in a specific community.</p>
+        <div class="hero-pill-list">
+          <span class="hero-pill hero-pill-yellow">Education</span>
+          <span class="hero-pill">Healthcare</span>
+          <span class="hero-pill">Food &amp; Nutrition</span>
+          <span class="hero-pill">Clean Water</span>
+          <span class="hero-pill">Emergency Relief</span>
+          <span class="hero-pill">Orphans</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ALL 4 ORIGINAL PROJECTS WITH LIVE TRACKING ============ -->
+    <section class="section section-white" id="featured-projects">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">Our Work</span>
+          <h2>Our Projects Across Pakistan</h2>
+          <p class="section-sub">Sample projects showing how funds are grouped, tracked and reported by region.</p>
+        </div>
+
+        <div class="cards-grid" id="projectsGrid">
+          
+          <!-- 1. School Support — Punjab -->
+          <article class="card project-card" data-raised="750000" data-goal="1000000" id="project-punjab">
+            <div class="card-media">
+              <img src="images/projects/punjab-school.jpg" alt="Pakistani students in uniform outside a village school building in Punjab" loading="lazy" width="1024" height="700" />
+              <span class="status-badge status-ongoing">Ongoing</span>
+            </div>
+            <div class="card-body">
+              <span class="badge badge-blue">Punjab</span>
+              <h3>School Support — Punjab</h3>
+              <p>Provide educational materials, uniforms and learning support to students in rural Punjab.</p>
+              <div class="progress" role="progressbar" aria-label="Funds raised for School Support Punjab" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">
+                <span class="progress-bar"></span>
+              </div>
+              <p class="progress-meta"><strong class="raised"></strong> raised of <span class="goal"></span> <span class="percent"></span></p>
+              <a class="btn btn-yellow btn-block" style="margin-top: 0.8rem;" href="donate.html?cause=Education">Support This Project</a>
+            </div>
+          </article>
+
+          <!-- 2. Clean Water Initiative — Sindh -->
+          <article class="card project-card" data-raised="420000" data-goal="800000" id="project-sindh">
+            <div class="card-media">
+              <img src="images/projects/sindh-water.jpg" alt="Villagers filling clay pots at a water well in rural Sindh, Pakistan" loading="lazy" width="1024" height="700" />
+              <span class="status-badge status-urgent">Urgent</span>
+            </div>
+            <div class="card-body">
+              <span class="badge badge-blue">Sindh</span>
+              <h3>Clean Water Initiative — Sindh</h3>
+              <p>Support communities in interior Sindh with hand pumps and safer drinking water access.</p>
+              <div class="progress" role="progressbar" aria-label="Funds raised for Clean Water Initiative Sindh" aria-valuemin="0" aria-valuemax="100" aria-valuenow="53">
+                <span class="progress-bar"></span>
+              </div>
+              <p class="progress-meta"><strong class="raised"></strong> raised of <span class="goal"></span> <span class="percent"></span></p>
+              <a class="btn btn-yellow btn-block" style="margin-top: 0.8rem;" href="donate.html?cause=Clean%20Water">Support This Project</a>
+            </div>
+          </article>
+
+          <!-- 3. Community Healthcare — Khyber Pakhtunkhwa -->
+          <article class="card project-card" data-raised="600000" data-goal="600000" id="project-kpk">
+            <div class="card-media">
+              <img src="images/projects/kpk-health.jpg" alt="Pakistani nurse attending to families at a mountain medical camp in Khyber Pakhtunkhwa" loading="lazy" width="1024" height="700" />
+              <span class="status-badge status-completed">Completed</span>
+            </div>
+            <div class="card-body">
+              <span class="badge badge-success">Khyber Pakhtunkhwa</span>
+              <h3>Community Healthcare — Khyber Pakhtunkhwa</h3>
+              <p>Basic healthcare camps, medicines and maternal health awareness in mountain districts.</p>
+              <div class="progress" role="progressbar" aria-label="Funds raised for Community Healthcare Khyber Pakhtunkhwa" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+                <span class="progress-bar"></span>
+              </div>
+              <p class="progress-meta"><strong class="raised"></strong> raised of <span class="goal"></span> <span class="percent"></span></p>
+              <a class="btn btn-outline btn-block" style="margin-top: 0.8rem;" href="donate.html?cause=Healthcare">Sponsor Healthcare Camp</a>
+            </div>
+          </article>
+
+
+        </div>
+        <p class="disclaimer">Project names, regions and amounts are demonstration content, not actual operations.</p>
+      </div>
+    </section>
+
+    <!-- ============ ALL 6 CAUSES (Exact Original Cards, Images & Text) ============ -->
+    <section class="section section-muted" id="causes">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow eyebrow-yellow">Our causes</span>
+          <h2>Support a Cause That Matters</h2>
+          <p class="section-sub">Choose the work closest to your heart. Every contribution is directed to a specific need in a specific community.</p>
+        </div>
+
+        <div class="cards-grid" id="causesGrid">
+          
+          <!-- 1. Education -->
+          <article class="card cause-card" id="education">
+            <div class="card-media">
+              <img src="images/causes/education.jpg" alt="Pakistani school children writing in notebooks inside a village classroom" loading="lazy" width="1024" height="768" />
+            </div>
+            <div class="card-body">
+              <span class="badge badge-blue">Education Pillar</span>
+              <h3>Education</h3>
+              <p>Help children access quality education, school supplies and learning opportunities.</p>
+              <a class="btn btn-yellow btn-block" href="donate.html?cause=Education">Support Education</a>
+            </div>
+          </article>
+
+          <!-- 2. Food & Nutrition -->
+          <article class="card cause-card" id="food-nutrition">
+            <div class="card-media">
+              <img src="images/causes/food.jpg" alt="Volunteers serving cooked rice to families at a Pakistani community kitchen" loading="lazy" width="1024" height="768" />
+            </div>
+            <div class="card-body">
+              <span class="badge badge-yellow">Nutrition Pillar</span>
+              <h3>Food &amp; Nutrition</h3>
+              <p>Support families facing food insecurity through ration packages and community meals.</p>
+              <a class="btn btn-yellow btn-block" href="donate.html?cause=Food%20%26%20Nutrition">Provide Food</a>
+            </div>
+          </article>
+
+          <!-- 3. Healthcare -->
+          <article class="card cause-card" id="healthcare">
+            <div class="card-media">
+              <img src="images/causes/healthcare.jpg" alt="Pakistani doctor examining a young child held by her mother at a medical camp" loading="lazy" width="1024" height="768" />
+            </div>
+            <div class="card-body">
+              <span class="badge badge-blue">Healthcare Pillar</span>
+              <h3>Healthcare</h3>
+              <p>Help communities access essential healthcare, medicines and medical camps.</p>
+              <a class="btn btn-yellow btn-block" href="donate.html?cause=Healthcare">Support Healthcare</a>
+            </div>
+          </article>
+
+          <!-- 4. Clean Water -->
+          <article class="card cause-card" id="clean-water">
+            <div class="card-media">
+              <img src="images/causes/water.jpg" alt="Pakistani village children collecting water from a newly installed hand pump" loading="lazy" width="1024" height="768" />
+            </div>
+            <div class="card-body">
+              <span class="badge badge-blue">Safe Water Pillar</span>
+              <h3>Clean Water</h3>
+              <p>Support access to clean and safe drinking water in underserved communities.</p>
+              <a class="btn btn-yellow btn-block" href="donate.html?cause=Clean%20Water">Provide Clean Water</a>
+            </div>
+          </article>
+
+          <!-- 5. Emergency Relief -->
+          <article class="card cause-card" id="emergency-relief">
+            <div class="card-media">
+              <img src="images/causes/relief.jpg" alt="Pakistani volunteers delivering relief supplies to a flood affected village" loading="lazy" width="1024" height="768" />
+            </div>
+            <div class="card-body">
+              <span class="badge badge-urgent">Disaster Response</span>
+              <h3>Emergency Relief</h3>
+              <p>Support families affected by floods, natural disasters and other emergencies in Pakistan.</p>
+              <a class="btn btn-yellow btn-block" href="donate.html?cause=Emergency%20Relief">Support Relief</a>
+            </div>
+          </article>
+
+          <!-- 6. Orphans & Vulnerable Children -->
+          <article class="card cause-card" id="orphans-children">
+            <div class="card-media">
+              <img src="images/causes/children.jpg" alt="Group of smiling Pakistani children outside a community centre" loading="lazy" width="1024" height="768" />
+            </div>
+            <div class="card-body">
+              <span class="badge badge-yellow">Child Protection</span>
+              <h3>Orphans &amp; Vulnerable Children</h3>
+              <p>Support children who need educational, nutritional and basic day-to-day assistance.</p>
+              <a class="btn btn-yellow btn-block" href="donate.html?cause=Orphans%20%26%20Vulnerable%20Children">Help Children</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="index.html">
+          <span class="brand-mark" aria-hidden="true">U</span>
+          <span class="brand-text"><strong>Umeed Pakistan</strong><em>Foundation</em></span>
+        </a>
+        <p>Together, We Can Build a Better Pakistan. We work with communities across Pakistan on education, health, food, water and emergency relief.</p>
+        <ul class="socials">
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
+          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="who-we-are.html">About</a></li>
+          <li><a href="projects.html">Causes</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="volunteers.html">Volunteers</a></li>
+          <li><a href="how-to-help.html">How to Help</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Causes">
+        <h3>Causes</h3>
+        <ul>
+          <li><a href="projects.html#education">Education</a></li>
+          <li><a href="projects.html#healthcare">Healthcare</a></li>
+          <li><a href="projects.html#food-nutrition">Food &amp; Nutrition</a></li>
+          <li><a href="projects.html#emergency-relief">Clean Water</a></li>
+          <li><a href="projects.html#emergency-relief">Emergency Relief</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul class="plain">
+          <li>Blue Area, Islamabad, Pakistan</li>
+          <li>+92 300 0000000 (demo)</li>
+          <li>info@example.org (demo)</li>
+        </ul>
+        <a class="btn btn-yellow" href="donate.html" style="margin-top: 0.6rem;">Donate Now</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Umeed Pakistan Foundation. All Rights Reserved.</p>
+      <p>Demo website for presentation purposes — not a real organisation.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+  <div class="toast-wrap" id="toastWrap" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
